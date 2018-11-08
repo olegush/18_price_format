@@ -36,5 +36,5 @@ if __name__ == '__main__':
     except IndexError:
         exit('Please use script parameter (any formatted price)')
     else:
-        print('Formatted prece:')
+        print('Formatted price:')
         print(format_price(user_price))
