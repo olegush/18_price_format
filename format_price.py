@@ -20,7 +20,7 @@ def formaf_price_with_separator(price):
     for char in price[::-1]:
         if char.isdigit() and not flag:
             price_kop += char
-        elif len(price_kop) > 0:
+        elif price_kop:
             flag = True
             index_kop -= 1
     price_rub = ''
