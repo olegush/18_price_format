@@ -1,21 +1,27 @@
 # Price Formatter
 
-The script formats any formatted price to useful view, for example price **68443руб.89коп** will be format to **68 444**
+The script formats any inputed price to useful view
 
 
 # Quickstart
 
 Run **format_price.py** with argument. 
 
-Example of script launch on Linux, Python 3.7:
-
 ```bash
 
-$ python format_price.py 68443руб.89коп
+$ python format_price.py 6844389.32
 
 Formatted price:
-68 444
+6 844 389.32
 
+```
+
+or import format_price() function
+
+```
+>>> from format_price import format_price
+>>> format_price(6844389.32)
+6 844 389.32
 ```
 
 
