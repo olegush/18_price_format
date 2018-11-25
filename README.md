@@ -20,7 +20,7 @@ or import format_price() function
 
 ```python 
 from format_price import format_price
-format_price(6844389.32)
+format_price(price)
 ```
 
 
