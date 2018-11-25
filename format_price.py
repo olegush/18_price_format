@@ -4,7 +4,7 @@ import sys
 def format_price(price):
     try:
         floated_price = float(price.replace(' ', ''))
-    except (ValueError, TypeError):
+    except (ValueError, TypeError, AttributeError):
         pass
     else:
         preformatted_price = '{:,.2f}'.format(floated_price)
