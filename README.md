@@ -18,10 +18,9 @@ Formatted price:
 
 or import format_price() function
 
-```
->>> from format_price import format_price
->>> format_price(6844389.32)
-6 844 389.32
+```python 
+from format_price import format_price
+format_price(6844389.32)
 ```
 
 
