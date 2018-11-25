@@ -4,6 +4,14 @@ from format_price import format_price
 
 class FomatPriceTest(unittest.TestCase):
     def test_int_price(self):
+        price = format_price(1278)
+        self.assertEqual(price, '1 278')
+
+    def test_int_str_price(self):
+        price = format_price('1278')
+        self.assertEqual(price, '1 278')
+
+    def test_int_price(self):
         price = format_price('1250000')
         self.assertEqual(price, '1 250 000')
 
@@ -52,6 +60,8 @@ class FomatPriceTest(unittest.TestCase):
         self.assertIsNone(format_price(dict()))
         self.assertIsNone(format_price(tuple()))
         self.assertIsNone(format_price(set()))
+        self.assertIsNone(format_price(True))
+        self.assertIsNone(format_price(False))
 
 
 if __name__ == '__main__':
